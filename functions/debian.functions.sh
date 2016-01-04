@@ -16,13 +16,13 @@ sed -i ':a;N;$!ba;s/main\n/main contrib non-free\n/g' /etc/apt/sources.list
 
 cat > /etc/apt/sources.list.d/dotdeb.list <<EOF
 # DotDeb
-deb http://packages.dotdeb.org wheezy all
-deb-src http://packages.dotdeb.org wheezy all
+# deb http://packages.dotdeb.org wheezy all
+# deb-src http://packages.dotdeb.org wheezy all
 
 EOF
 
-wget http://www.dotdeb.org/dotdeb.gpg
-cat dotdeb.gpg | apt-key add - 
+#wget http://www.dotdeb.org/dotdeb.gpg
+#cat dotdeb.gpg | apt-key add - 
 
 apt-get update
 } #end function debian.install_Repos
