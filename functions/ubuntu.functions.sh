@@ -9,37 +9,37 @@
 
 back_title="ISPConfig 3 System Installer"
 
-ubuntu.install_Repos (){
+#ubuntu.install_Repos (){
 
 #Updates server and install commonly used utilities
-cp /etc/apt/sources.list /etc/apt/sources.list.backup
-cat > /etc/apt/sources.list <<EOF
-deb mirror://mirrors.ubuntu.com/mirrors.txt trusty main restricted
-deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates main restricted
+#cp /etc/apt/sources.list /etc/apt/sources.list.backup
+#cat > /etc/apt/sources.list <<EOF
+#deb mirror://mirrors.ubuntu.com/mirrors.txt trusty main restricted
+#deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates main restricted
 
-deb mirror://mirrors.ubuntu.com/mirrors.txt trusty universe
-deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty universe
+#deb mirror://mirrors.ubuntu.com/mirrors.txt trusty universe
+#deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty universe
 
-deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates universe
-deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates universe
+#deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates universe
+#deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates universe
 
-deb mirror://mirrors.ubuntu.com/mirrors.txt trusty multiverse
-deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty multiverse
+#deb mirror://mirrors.ubuntu.com/mirrors.txt trusty multiverse
+#deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty multiverse
 
-deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates multiverse
-deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates multiverse
+#deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates multiverse
+#deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates multiverse
 
-deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-backports main restricted universe multiverse
-deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty-backports main restricted universe multiverse
+#deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-backports main restricted universe multiverse
+#deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty-backports main restricted universe multiverse
 
-deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-security main restricted
-deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty-security main restricted
+#deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-security main restricted
+#deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty-security main restricted
 
-deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-security universe
-deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty-security universe
-EOF
+#deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-security universe
+#deb-src mirror://mirrors.ubuntu.com/mirrors.txt trusty-security universe
+#EOF
 
-} #end function ubuntu.install_Repos
+#} #end function ubuntu.install_Repos
 
 ubuntu.install_DisableAppArmor (){
 
